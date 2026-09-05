@@ -13,7 +13,7 @@ export const site = {
   brandSuffix: "by Alina",
   artistName: "Alina",
   artistFullName: "Alina Reibold",
-  city: "[YOUR CITY]", // e.g. "Freiburg, Germany"
+  city: "Duesseldorf", // e.g. "Freiburg, Germany"
   email: "alinareibold@gmail.com",
   instagramHandle: "@art.elierbyalina",
   instagramUrl: "https://instagram.com/art.elierbyalina",
@@ -29,11 +29,11 @@ export const site = {
     // Three headline options were drafted for this brief — this is the one
     // in use. Swap in headlineAlt1 / headlineAlt2 any time by editing which
     // line is called "headline" here.
-    headline: "Paintings made to hold a memory.",
+    headline: "Art that makes a space feel like yours.",
     headlineAlt1: "Art that makes a space feel like yours.",
     headlineAlt2: "A place, a person, a moment — painted to last.",
     subheadline:
-      "Hand-painted originals and custom commissions by Alina, an artist based in [YOUR CITY].",
+      "Hand-painted originals and custom commissions by Alina, an artist based in Duesseldorf.",
     primaryCta: { label: "Shop Original Art", href: "/shop" },
     secondaryCta: { label: "Create a Custom Painting", href: "/commissions" },
   },
@@ -43,12 +43,12 @@ export const site = {
     body: "Every piece starts with something real — a face, a pet, a place you keep going back to in your mind. Send me the memory, and I'll turn it into a painting that stays.",
     categories: [
       "Portraits",
-      "Couples",
+  
       "Pets",
       "Places",
       "Travel memories",
       "Meaningful moments",
-      "Gifts",
+
     ],
     cta: { label: "Commission a painting", href: "/commissions" },
   },
@@ -57,7 +57,7 @@ export const site = {
     heading: "My Story",
     // Honest, first-person, not overly polished — keep edits in this voice.
     paragraphs: [
-      "I started painting because it was the one place I didn't have to explain myself. A brush, a blank canvas, and however long it took to get it right.",
+      "Hey, I am Alina, a 20 zear old acrylic artist from Germany! I make atmospheric paintings that draw you in as soon as you take a glance ",
       "I'm about to start university, and I'm building art.elier alongside it — not as a side project, but as the thing I actually want my life to be built around. Slowly, one commission at a time.",
       "The paintings that mean the most to me are the ones that carry someone else's memory. A view from a family holiday. A pet that isn't around anymore. A place two people call home. If you're looking for something like that, I'd love to hear about it.",
     ],
@@ -65,7 +65,7 @@ export const site = {
 
   instagramSection: {
     heading: "Instagram",
-    body: "New paintings, works in progress, and behind-the-scenes from the studio.",
+    body: "New paintings, works in progress, and behind-the-scenes.",
     cta: { label: "Follow my journey", href: "https://instagram.com/art.elierbyalina" },
   },
 
@@ -113,18 +113,18 @@ export const site = {
   },
 
   about: {
-    heading: "About Alina",
+    heading: "About me",
     paragraphs: [
       "I'm Alina — I paint, and I'm trying to build a life around it.",
       "I picked up a brush before I could really explain why. What kept me painting was realizing that a picture could hold something a photo couldn't quite reach — the feeling of a place, not just how it looked.",
-      "I paint mostly landscapes, portraits, and pieces built around a personal story: a family trip, a person, a home. One of the paintings I'm proudest of shows the Drei Zinnen for a family I used to live with as an exchange student — with four small, half-hidden birds worked into the peaks, one for each person in the family. Almost no one notices them at first. That's usually the point.",
-      "I'm starting university soon, and I know from the outset that I'll be building art.elier in the hours around it — early mornings, evenings, whatever's left. It's slower this way, but it's real, and I'd rather grow it properly than rush it.",
+      "I paint mostly landscapes, portraits, and pieces built around a personal story. One of the paintings I'm proudest of shows the Three Peaks for a lovely family — with four small, half-hidden birds worked into the peaks, one for each person in the family. Almost no one notices them at first. That's usually the point.",
+    
       "If you're here because a painting means something to you too, you're in the right place.",
     ],
     photoCaptions: [
-      "[PHOTO: Alina in the studio]",
+      "[PHOTO: in the studio]",
       "[PHOTO: Work in progress]",
-      "[PHOTO: Alina painting outdoors]",
+      "[PHOTO: painting outdoors]",
     ],
   },
 
@@ -148,10 +148,6 @@ export const site = {
       "original artwork",
       "paintings Germany",
       "artist Germany",
-      
-    
     ],
   },
 };
-
-
