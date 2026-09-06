@@ -80,7 +80,7 @@ export const paintings: Painting[] = [
     available: false,
     description: "comissioned family painting",
     story: "A commissioned piece I did for my hostfamiliy",
-    featured: true,
+    featured: false,
 
   },
 
@@ -96,7 +96,7 @@ export const paintings: Painting[] = [
     description: "A violet flower still life",
     story: 
     "This painting was made during my stay as an Au-Pair in Amsterdam. It made my room feel like home.",
-    featured: true,
+    featured: false,
 
   },
 

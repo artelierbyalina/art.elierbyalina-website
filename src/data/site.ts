@@ -54,7 +54,7 @@ export const site = {
     // Honest, first-person, not overly polished — keep edits in this voice.
     paragraphs: [
       "Painting is my happy place. And I want to give that joy to others with my paintings.",
-      "The paintings that mean the most to me are the ones that carry someone else's memory. A view from a family holiday. A pet that isn't around anymore. A place two people call home. If you're looking for something like that, I'd love to hear about it.",
+      "The paintings that mean the most to me are the ones that carry someone else's story. A view from a family holiday. A pet that isn't around anymore. A place two people call home. If you're looking for something like that, I'd love to hear about it.",
     ],
   },
 
