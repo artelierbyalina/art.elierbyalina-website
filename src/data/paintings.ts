@@ -68,6 +68,22 @@ export const paintings: Painting[] = [
       "The first and still the largest painting I ever did",
     featured: true,
   },
+
+  {
+    slug: "still-life-in-violet",
+    title: "still life in violet",
+    image: "/images/paintings/IMG_flowers.jpeg",
+    size: "60 x 60 cm",
+    medium: "acrylic on canvas",
+    price: 225,
+    available: false,
+    description: "A violet flower still life",
+    story: 
+    "This painting was made during my stay as an Au-Pair in Amsterdam. It made my room feel like home.",
+    featured: true,
+
+  },
+
   {
     slug: "chasing-the-last-light",
     title: "Chasing the last light",
@@ -81,6 +97,7 @@ export const paintings: Painting[] = [
      "This painting was made in a really hard time of my life and it was meant to give me back some hope, by bringing me back my passion for painting.",
     featured: false,
   },
+
 ];
 
 export const featuredPaintings = paintings.filter((p) => p.featured);
