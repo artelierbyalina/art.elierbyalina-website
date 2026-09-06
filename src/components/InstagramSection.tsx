@@ -22,13 +22,39 @@ export default function InstagramSection() {
           Instagram post/reel still once you have the URLs. Until then this
           keeps the section visually intact. */}
       <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-2">
-        {[1, 2, 3, 4].map((i) => (
-          <div
-            key={i}
-            className="aspect-square bg-paper border border-stone/50 flex items-center justify-center text-xs text-ink/35"
+        {[
+          { 
+            image: "/images/reel_1.jpeg",
+            url: "https://instagram.com/reel/DboXvNfI2zs/",
+
+          },
+          {
+            image: "/images/reel_2.jpeg",
+            url: "https://instagram.com/reel/Dcv7f--IMu5/",
+          },
+          { 
+            image: "/images/reel_3.jpeg",
+            url: "https://instagram.com/reel/Dc3xo9toOL4/",
+          },
+          {
+            image: "/images/reel_4.jpeg",
+            url: "https://instagram.com/reel/DZE9-AmIhP0/",
+          },
+        ].map((post,i) => (
+          <a
+          key={i}
+          href={post.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="aspect-square overflow-hidden border border-stone/50"
           >
-            [INSTAGRAM POST {i}]
-          </div>
+            <img
+            src={post.image}
+            alt={'Behind the scenes reel ${i + 1}'}
+            className="w-full h-full objecr-cover transition-transform duration-500 hover:scale-105"
+            />
+          </a>
+      
         ))}
       </div>
     </section>
