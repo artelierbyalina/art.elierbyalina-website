@@ -5,7 +5,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Commissions",
   description:
-    "Commission a custom hand-painted artwork — portraits, pets, places, and personal memories, made just for you.",
+    "Commission a custom hand-painted artwork — places, pets, personal memories or painted objects, made just for you.",
 };
 
 export default function CommissionsPage() {

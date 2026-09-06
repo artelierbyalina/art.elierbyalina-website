@@ -69,13 +69,29 @@ export const paintings: Painting[] = [
     featured: true,
   },
 
+  
+  { 
+    slug: "comissioned-painting-kids",
+    title: "commissioned painting kids",
+    image: "/images/paintings/IMG_kids.jpeg",
+    size: "50 x 70 cm",
+    medium: "Acrylic on canvas", 
+    price: 400,
+    available: false,
+    description: "comissioned family painting",
+    story: "A commissioned piece I did for my hostfamiliy",
+    featured: true,
+
+  },
+
+
   {
     slug: "still-life-in-violet",
     title: "still life in violet",
     image: "/images/paintings/IMG_flowers.jpeg",
     size: "60 x 60 cm",
-    medium: "acrylic on canvas",
-    price: 225,
+    medium: "Acrylic on canvas",
+    price: 300,
     available: false,
     description: "A violet flower still life",
     story: 
@@ -83,6 +99,7 @@ export const paintings: Painting[] = [
     featured: true,
 
   },
+
 
   {
     slug: "chasing-the-last-light",
