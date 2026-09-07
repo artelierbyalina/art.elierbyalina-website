@@ -26,7 +26,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form action= "https://formspree.io/f/mzebjaoq" method="POST" className="space-y-6">
       <div>
         <label className={labelClasses} htmlFor="name">
           Name
