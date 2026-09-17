@@ -109,10 +109,16 @@ export const site = {
   about: {
     heading: "About me",
     paragraphs: [
-      "I'm Alina — I paint, and I'm trying to build a life around it.",
-      "I paint mostly landscapes, portraits, and pieces built around a personal story. One of the paintings I'm proudest of shows the Three Peaks for a lovely family — with four small, half-hidden birds worked above the peaks, one for each person in the family. Almost no one notices them at first. That's usually the point.",
-      "I'm starting university soon, and I know from the outset that I'll be building art.elier in the hours around it — early mornings, evenings, whatever's left. It's slower this way, but it's real, and I'd rather grow it properly than rush it.",
-      "If you're here because a painting means something to you too, you're in the right place.",
+
+  "I'm Alina — I paint, and I'm building a life around it.",
+  "I've been drawing for as long as I can remember, but I only really started painting when I was around 15. At the time, I was about to do an internship in the art studio of a theatre. I had never really worked with a paintbrush before, and the thought of showing up without knowing what I was doing made me think: I should probably practice first.",
+  "So, about a week before the internship, I picked up a brush and started painting. I didn't know it at the time, but that little bit of preparation would turn into something much bigger. I never really stopped painting after that.",
+  "The experience at the theatre also introduced me to something I still love today: working on a large scale. I quickly started moving from small canvases to bigger and bigger ones.",
+  "Today, I paint mostly landscapes, portraits, and pieces built around a personal story. I'm especially drawn to atmosphere — the kind of light, colour, and little details that can make a painting feel like a place you could actually step into. Sometimes the meaning is obvious; sometimes it's hidden in something as small as four birds above a mountain range, each representing someone important.",
+  "I'm starting university soon, and I'll be building art.elier around it — early mornings, evenings, and whatever time I can make. It's slower this way, but it's real. And I'd rather grow it properly than rush it.",
+  "I don't know exactly where painting will take me yet. I just know that I want to find out — and, hopefully, build a life around it.",
+
+
     ],
     photoCaptions: [
       "[PHOTO: in the studio]",
