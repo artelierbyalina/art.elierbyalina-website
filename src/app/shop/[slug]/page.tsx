@@ -69,15 +69,11 @@ export default function PaintingPage({ params }: { params: { slug: string } }) {
             <p className="mt-3 text-ink/75 leading-relaxed">{painting.story}</p>
           </div>
 
-          <div className="mt-8 pt-8 border-t border-stone/60 text-sm text-ink/65 space-y-2">
-            <p>Carefully packaged and insured for shipping. [SHIPPING DETAILS / RATES]</p>
-            <p>Ships from {site.city}. Delivery times vary by destination.</p>
-          </div>
 
           <div className="mt-8">
             {painting.available ? (
               <Button href={`mailto:${site.email}?subject=${requestSubject}&body=${requestBody}`}>
-                Inquire to Buy
+                Get in Touch
               </Button>
             ) : (
               <p className="text-sm text-ink/50">
