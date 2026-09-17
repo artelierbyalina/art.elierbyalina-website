@@ -37,15 +37,16 @@ export default function PaintingPage({ params }: { params: { slug: string } }) {
       </a>
 
       <div className="mt-8 grid md:grid-cols-2 gap-12 md:gap-16">
-        <div className="relative aspect-[4/5] bg-paper overflow-hidden">
+        <div className="relative bg-paper flex items-center justify-center">
           <Image
-            src={painting.image}
-            alt={`${painting.title} — ${painting.medium}, ${painting.size}`}
-            fill
-            sizes="(min-width: 768px) 50vw, 100vw"
-            className={`object-cover ${painting.available ? "" : "grayscale-[35%] opacity-80"}`}
-            priority
-          />
+           src={painting.image}
+           alt={`${painting.title} — ${painting.medium}, ${painting.size}`}
+           width={1200}
+           height={1200}
+           sizes="(min-width: 768px) 50vw, 100vw"
+           className={`w-full h-auto object-contain ${painting.available ? "" : "grayscale-[35%] opacity-80"}`}
+           priority
+           />
           {!painting.available && (
             <span className="absolute top-4 left-4 bg-cream/95 text-sold text-xs px-3 py-1 tracking-wide">
               Sold

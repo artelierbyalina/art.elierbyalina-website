@@ -19,16 +19,16 @@ export default function PaintingCard({
 }) {
   return (
     <Link href={`/shop/${painting.slug}`} className="group block">
-      <div className="relative aspect-[4/5] overflow-hidden bg-paper">
+      <div className="relative overflow-hidden bg-paper">
         <Image
-          src={painting.image}
-          alt={`${painting.title} — ${painting.medium}, ${painting.size}`}
-          fill
-          sizes="(min-width: 768px) 33vw, 100vw"
-          className={`object-cover transition-transform duration-700 ease-soft group-hover:scale-[1.03] ${
-            painting.available ? "" : "grayscale-[35%] opacity-80"
-          }`}
-        />
+  src={painting.image}
+  alt={`${painting.title} — ${painting.medium}, ${painting.size}`}
+  fill
+  sizes="(min-width: 768px) 33vw, 100vw"
+  className={`object-cover transition-transform duration-700 ease-soft group-hover:scale-[1.03] ${
+    painting.available ? "" : "grayscale-[35%] opacity-80"
+  }`}
+/>
         {!painting.available && (
           <span className="absolute top-3 left-3 bg-cream/95 text-sold text-xs px-3 py-1 tracking-wide">
             Sold
