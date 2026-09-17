@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { useState } from "react";
 import { site } from "@/data/site";
@@ -11,9 +10,17 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-stone/60">
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="flex items-baseline gap-2" onClick={() => setOpen(false)}>
-            <span className="font-serif text-2xl italic">{site.brandName}</span>
-            <span className="font-sans text-xs text-ink/60">{site.brandSuffix}</span>
+          <Link
+            href="/"
+            className="flex items-baseline gap-2"
+            onClick={() => setOpen(false)}
+          >
+            <span className="font-serif text-2xl italic">
+              {site.brandName}
+            </span>
+            <span className="font-sans text-xs text-ink/60">
+              {site.brandSuffix}
+            </span>
           </Link>
 
           {/* Desktop nav */}

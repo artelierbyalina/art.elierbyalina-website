@@ -19,7 +19,7 @@ export const site = {
   instagramUrl: "https://instagram.com/art.elierbyalina",
 
   nav: [
-    { label: "Shop", href: "/shop" },
+    { label: "Explore", href: "/shop" },
     { label: "Commissions", href: "/commissions" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
@@ -34,16 +34,16 @@ export const site = {
     headlineAlt2: "A place, a person, a moment — painted to last.",
     subheadline:
       "Hand-painted originals and custom commissions by Alina, an artist based in Düsseldorf.",
-    primaryCta: { label: "Shop Original Art", href: "/shop" },
+    primaryCta: { label: "Explore Original Art", href: "/shop" },
     secondaryCta: { label: "Create a Custom Painting", href: "/commissions" },
   },
 
   customArt: {
     heading: "Custom Art",
-    body: "Every piece starts with something real — a face, a pet, a place. Send me the memory, and I'll turn it into a painting that stays.",
+    body: "Every piece starts with something real — a face, a pet, a place. Send me your vision, and I'll turn it into a painting that stays.",
     categories: [
       "Places",
-      "Memories",
+      "Portraits",
       "Pets",
     ],
     cta: { label: "Commission a painting", href: "/commissions" },
@@ -76,7 +76,7 @@ export const site = {
     categories: [
       { name: "Places", description: "A view, a street, a home" },
       { name: "Pets", description: "The ones who feel like family." },
-      { name: "Memories", description: "A moment worth keeping around." },
+      { name: "Portraits", description: "A special keepsake of your loved ones." },
     ],
     process: [
       {
@@ -122,8 +122,8 @@ export const site = {
   },
 
   contact: {
-    heading: "Have an idea for a painting?",
-    subheading: "I'd love to hear it.",
+    heading: "Want a painting of your own?",
+    subheading: "I'd love to hear about it.",
   },
 
   seo: {
