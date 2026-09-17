@@ -20,7 +20,7 @@ export default function PaintingCard({
   return (
     <Link href={`/shop/${painting.slug}`} className="group block">
       <div className="relative overflow-hidden bg-paper">
-        <Image
+     <Image
   src={painting.image}
   alt={`${painting.title} — ${painting.medium}, ${painting.size}`}
   fill
