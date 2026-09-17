@@ -72,9 +72,9 @@ export default function PaintingPage({ params }: { params: { slug: string } }) {
 
           <div className="mt-8">
             {painting.available ? (
-              <Button href={`mailto:${site.email}?subject=${requestSubject}&body=${requestBody}`}>
-                Get in Touch
-              </Button>
+              <Button href="/contact">
+                   Get in Touch
+                 </Button>
             ) : (
               <p className="text-sm text-ink/50">
                 This piece has found its home. Interested in something similar?{" "}
