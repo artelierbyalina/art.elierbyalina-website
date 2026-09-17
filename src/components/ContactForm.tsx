@@ -8,12 +8,37 @@ const labelClasses = "block text-sm text-ink/70 mb-2";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
 
-  // Same note as the commission form: wire this up via Formspree or a
-  // mailto: fallback — see the README's "Connecting the forms" section.
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setSending(true);
+    setError("");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mzebjaoq", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        form.reset();
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setSending(false);
+    }
   }
 
   if (submitted) {
@@ -26,25 +51,49 @@ export default function ContactForm() {
   }
 
   return (
-    <form action= "https://formspree.io/f/mzebjaoq" method="POST" className="space-y-6">
+    <form
+      onSubmit={handleSubmit}
+      className="space-y-6"
+    >
       <div>
         <label className={labelClasses} htmlFor="name">
           Name
         </label>
-        <input className={inputClasses} id="name" name="name" type="text" required />
+        <input
+          className={inputClasses}
+          id="name"
+          name="name"
+          type="text"
+          required
+        />
       </div>
+
       <div>
         <label className={labelClasses} htmlFor="email">
           Email
         </label>
-        <input className={inputClasses} id="email" name="email" type="email" required />
+        <input
+          className={inputClasses}
+          id="email"
+          name="email"
+          type="email"
+          required
+        />
       </div>
+
       <div>
         <label className={labelClasses} htmlFor="message">
           Message
         </label>
-        <textarea className={inputClasses} id="message" name="message" rows={6} required />
+        <textarea
+          className={inputClasses}
+          id="message"
+          name="message"
+          rows={6}
+          required
+        />
       </div>
+
       <div>
         <label className={labelClasses} htmlFor="image">
           Image (optional)
@@ -57,11 +106,19 @@ export default function ContactForm() {
           accept="image/*"
         />
       </div>
+
+      {error && (
+        <p className="text-sm text-red-700">
+          {error}
+        </p>
+      )}
+
       <button
         type="submit"
-        className="inline-flex items-center justify-center px-8 py-3.5 bg-ink text-cream text-[15px] tracking-wide hover:bg-clay-dark transition-colors duration-300"
+        disabled={sending}
+        className="inline-flex items-center justify-center px-8 py-3.5 bg-ink text-cream text-[15px] tracking-wide hover:bg-clay-dark transition-colors duration-300 disabled:opacity-50"
       >
-        Send message
+        {sending ? "Sending..." : "Send message"}
       </button>
     </form>
   );
